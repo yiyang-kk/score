@@ -86,6 +86,6 @@ In case of problems, write an [issue here](https://git.homecredit.net/risk/pytho
 * [**Naďa Horká**](mailto:nada.horka@homecredit.eu) (HCI Research & Development)
 * **Kamil Yazigee** (HCI Research & Development)
 
-## License
 
+## License
 This project is licensed under the Apache License, Version 2.0 - see the [LICENSE](LICENSE) file for details
