@@ -1,0 +1,7 @@
+column,min order,max order,mid order,threshold,condition type,condition value
+AMOUNT_SUM,,,,3,>,0
+AMOUNT_SUM,,,,3,asc,
+AMOUNT_SUM,,,,3,desc,
+AMOUNT_SUM,1,6,,2,<=,1000
+AMOUNT_SUM,1,6,4,2,=,0
+AMOUNT_MAX,,,,,>=,1900

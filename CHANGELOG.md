@@ -1,0 +1,155 @@
+# Changelog
+- 0.9.0
+    -  the whole scoring is now buildable
+    -  weight support in whole PSW 
+    -  automatic generation of python scoring workflow library documentation
+    -  workflow compatibility with Pandas 1.x
+    -  minor changes in new documentation for scorecards in docx format (e.g. generating files into a defined new folder instead of flooding the default one)
+    -  several bug fixes, cleanups and minor improvements
+- 0.8.3
+    - preview of automated documentation for scorecards in docx format
+    - LGBM Workflow now fully supports weights
+    - several bug fixes, cleanups and improvements 
+    - FEFE: fixed compatibility issues with newest libraries of dash and pandas
+    - FEFE: various fixes of bugs (faster loading, edited header layout, better compatibility for stationary features)
+- 0.8.2
+    - fixes and cleanups in data interactive grouping
+    - histograms in interactive grouping now correctly support weights
+    - version check of scoring module prints from where it was loaded
+    - several bug fixes, cleanups and improvements
+- 0.8.1
+    - brand new workflow for Collection data preparation and model evaluation
+    - new grouping hyper parameter search with stability optimisation 
+    - new interactive grouping with time stability of predictors
+    - fixes in data download workflow
+    - refactored several charts and plots
+    - several bug fixes, cleanups and improvements
+- 0.8.0
+    - brand new workflow for Gradient Boosting models
+    - brand new workflow for downloading vector data from DWH
+    - performance optimization of marginal contribution and evaluation
+    - added stratification during cross-validation in stepwise regression
+    - fixes and optimizations in FEFE
+    - further optimizations in grouping
+    - several bug fixes, cleanups and improvements
+- 0.7.3
+    - performance optimizations for grouping
+    - parallelization of stepwise regression 
+    - replaced XGB feature selection with LGBM 
+    - brand new workflow for creating General Models
+    - several bug fixes, cleanups and improvements
+- 0.7.2
+    - updated text output of stepwise regression modeler
+    - fixed weights support for implemented Doctools plotters
+    - several bug fixes, cleanups and improvements
+- 0.7.1
+    - added Feature Engineering Front End - FEFE
+    - interactive grouping can now export plots and tables automatically
+    - first phase of Doctools integration was done and it's used for some plotting
+    - documentation updated to support combination of binned, linear and dummy variables
+    - various bug fixes, cleanups and improvements
+- 0.7.0
+    - full dummy regression: grouping and scorecard now support dummy encoded variables, new class for dummy regression
+    - stability charts now show intervals/values instead of WOE values
+    - several parts of notebook wrapped as functions and moved to scoring module
+    - various bug fixes, cleanups and improvements
+- 0.6.2
+    - added notebook template for data preparation
+    - added notebook template for target analysis
+    - added Reject inference imputation based on a external/old score it creates a proxy target.
+    - added PSI charts based on this [case study](http://ucanalytics.com/blogs/population-stability-index-psi-banking-case-study/)
+    - L1GiniModelSelection can now stop automatically when Gini starts decreasing
+    - various bugfixes and cleanups
+- 0.6.1 
+    - the PSW template notebook has a sligthly different structure trying to reflect the needs of actual scorecard development projects
+    - added cross-validation option into Stepwise Regression
+    - added class to estimate regression coefficient using bootstrapping, which can employ Stepwise Regression with any setting as base estimator
+    - added new tools.datetime_difference() function to calculate difference between any two datetime columns (can be of different formats) in various time units
+    - added a new interactive tool for creation of interactions between two variables easily (Alpha version)
+    - revised variable clustering objects
+    - added pieces of code to perform xgboost and extract the most imporant features from it as part of Feature Selection section
+    - various bugfixes of the new functions and classes from verison 0.6.0 (main bugs: random sampling did not take random_seed into account, bootstrap Gini was showing AUC instead of Gini statistic)
+- 0.6.0
+    - added stability_index module with two version of indicative index of stability calculation
+    - added metrics/bootstrap_gini function to calculate Gini estimates with confidence interval
+    - added data_manipulation module with data sample split function (used for stratified sampling)
+    - added uplift modelling module and uplift_fit() method in Grouping object
+    - added feature_selection module using xgBoost to select predictors
+    - refactoring in feature engineering objects
+    - in feature_egineering classes, there are now experimental functionalities to run transform() from where it ended and to see RAM consumption estimation
+- 0.5.2
+    - Added NaN share in time to data exploration part
+    - Two more functions which might be useful mainly after feature engineering (dynamic_diversity() and metadata_table()) added to data_exploration module
+    - Added score distribution plot
+    - Added metadata table templates and better method calling formatting into feature engineering documentation
+    - There are two version of Blaze table now (as there exist different versions of Blaze tools)
+    - Various bug fixes
+- 0.5.1
+    - Rejection inference analysis - new functionality to detect possible issues with "cherry-picking" in data. Requires data about application rejections.
+    - Automatic cluster surrogates - new functionality to automatically find surrogates for predictors that can't be used inside their respective clusters. Supports both k-means and correlation clustering.
+    - Grouping can now be exported as a SQL script
+    - Some code was moved from notebook to appropriate modules to keep the notebook cleaner
+    - Scoring module functions and methods should provide more descriptive errors to help users find problems with their code and data
+    - Version of notebook is now checked against version of scoring library to ensure compatibility
+    - Various bug fixes and optimizations
+- 0.5.0
+    - Efficient data types -  during import PSW will intelligently use smaller numerical types when possible to save memory. Categorical predictors will now use special Pandas type category for increased performance.
+    - Added long requested progress bars to certain parts of the workflow. (Needs a new library install)
+    - Added Kolmogorov-Smirnov metric for model testing
+    - Added support for weighted stability charts.
+    - Data exploration is now primarily exported to external HTML file to keep the notebook lighter and will better deal with large number of categorical values.
+    - Moved time stability of predictors to a better location in workflow
+    - Several bug fixes and optimizations (Interactive grouping should error less when saving)
+    - Improvements in feature engineering module: user can see more information about progress (% predictors already created), outputs are nicer and more descriptive
+- 0.4.6
+    - New module scoring.Scorecard for easier generating of scorecard tables and exporting to SQL, Blaze and Python
+    - Option to transform only a subset of columns after grouping
+    - Various bug fixes and optimizations
+- 0.4.5
+    - Ability to assign manual WOEs in Interactive Grouping
+    - Some more under-the-hood refactoring and optimizing in Grouping
+    - Sooo many times requested marginal contribution analysis
+    - Of course there were some bugfixes, mainly in the new data exploration
+    - New functionalities (one new class and new functions for some of the old classes) in feature engineering module
+- 0.4.4
+    - New types of features can be generated using the feature engineering module: consecutive events and features on categorical variables
+    - Bugfixes in feature engineering module
+    - Support of weights for basic data exploration. Now the workflow support weights from the start to the creation of model. The latter parts of workflow will get the weights support in the further versions.
+    - Completely refactored data exploration
+- 0.4.2
+    - Feature engineering module added to the scoring library (it is a separate module, not part of the workflow, more information about its usage can be found on Wiki in "Other materials" section)
+    - Support of weights for grouping and model selection modules (not for the full workflow yet though)
+    - Several minor tweaks and bug fixes based on the users' feedback
+- 0.4.1
+    - Removal of unusable predictors (those with only one distinct value or NAN values only) was not working in some cases – fixed now
+    - Undocumented functionality of weights in model selection was implemented incorrectly – fixed now
+    - Inconsistent calculation of “score = PD” vs “score = 1-PD” in scorecard code generating script – fixed now
+    - Some criteria for model selection were not making sense for other than “forward” selection – treated now
+    - Added ability to change number of quantiles in transition matrix
+- 0.4.0
+    - New functionality: Improvements in interactive grouping (WOE and Gini values displayed for all variables)
+    - New functionality: Along with SQL scoring code, Python scoring code and Blaze table are generated as well
+    - New functionality: variable clustering
+    - Bugfix: In transition matrices, old and new score were swapped in the previous version
+    - Other minor tweaks
+- 0.3.0
+    - Graphical data exploration. For each variable, you receive plenty of charts and HTML output with even more information.
+    - Interactive Grouping! Mainly thanks to Sergey Gerasimov from the Russian team, we have a working beta version of interactive grouping. I think you’ll like it.
+    - Generator of SQL code for the scorecard
+    - Automatic HTML scorecard documentation (it is not the full documentation required by our internal processes but it can quite help with creating it)
+    - There were many minor enhancements and fixes (e.g. in L1 regularized regression, stability charts, transition matrices etc.)
+- 0.2.0
+    - First version which was distributed to the whole Home Credit Group made in cooperation of HQ and RU
+    - Loading the data from CSV file or Oracle database
+    - Basic exploratory analysis of the data
+    - Train, validation, out of time split of the data
+    - Automatic grouping of numerical and categorical variables based on decision trees, saving such grouping into a file and loading it, WOE transformation based on the grouping. (Not interactive yet)
+    - Output with power of each variable (IV, Gini)
+    - Gini-based stepwise logistic regression on WOE variables
+    - L1-regularized logistic regression on WOE variables (as alternative to the stepwise for data with many variables)
+    - Scorecard table output
+    - ROC curve, Lift curve, monthly Gini and other performance characteristics of the scorecard
+    - Stability charts and correlation matrix of the predictor
+    - Comparison with another scorecard, transition matrices
+- 0.1.0
+    - Internal HQ version with basic functionality only

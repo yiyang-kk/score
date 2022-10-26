@@ -1,0 +1,14 @@
+INTERNAL,TELCO_A,TELCO_B,BUREAU_X,BUREAU_Y,UTILITY,DEVICE,Weighted obs %
+True,False,False,False,False,False,True,25.033875338753386
+True,False,False,False,False,True,False,2.0934959349593494
+True,False,False,False,True,True,False,1.2533875338753389
+True,False,False,True,False,True,False,2.682926829268293
+True,False,False,True,True,True,False,1.551490514905149
+True,False,True,False,False,True,False,10.365853658536585
+True,False,True,False,True,True,False,7.0257452574525745
+True,False,True,True,False,True,False,13.482384823848239
+True,False,True,True,True,True,False,9.044715447154472
+True,True,False,False,False,True,False,7.567750677506775
+True,True,False,False,True,True,False,4.884823848238482
+True,True,False,True,False,True,False,9.159891598915989
+True,True,False,True,True,True,False,5.853658536585366

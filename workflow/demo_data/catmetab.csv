@@ -1,0 +1,5 @@
+variable,aggregation,from,to,nancategorical,metric,granularity
+CITY_ARGMAXSUM_AMOUNT,argmax,1,6,1,AMOUNT_SUM,
+CITY_ARGMAXSUM_AMOUNT,tschange,1,6,1,,slices
+CITY_FIRST,nunique,1,6,1,,
+CITY_LAST,mode,1,6,1,,

@@ -1,0 +1,7 @@
+NUMERIC_TYPE = "numeric"
+CATEGORICAL_TYPE = "categorical"
+TIME_TYPE = "time"
+SIMPLE_TAB = "simple"
+RATIO_TAB = "ratio"
+TIME_SINCE_TAB = "time_since"
+IS_SOMETHING_TAB = "is_something"

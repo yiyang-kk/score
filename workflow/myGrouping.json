@@ -1,0 +1,194 @@
+{
+  "Numerical_1": {
+    "nan_woe": 0,
+    "dtype": "float64",
+    "bins": [
+      -Infinity,
+      0.941582717,
+      1.483142506,
+      Infinity
+    ],
+    "woes": [
+      -0.474554624722923,
+      0.16934230203384226,
+      1.0380897197042032
+    ],
+    "manual_woe": [
+      NaN,
+      NaN,
+      NaN
+    ]
+  },
+  "Numerical_2": {
+    "nan_woe": 0,
+    "dtype": "float64",
+    "bins": [
+      -Infinity,
+      1.1425045164999998,
+      2.211418569,
+      Infinity
+    ],
+    "woes": [
+      -0.46575091105105415,
+      0.44457859627794516,
+      2.1729140793584163
+    ],
+    "manual_woe": [
+      NaN,
+      NaN,
+      NaN
+    ]
+  },
+  "Numerical_4": {
+    "nan_woe": 0.035749149413361936,
+    "dtype": "float64",
+    "bins": [
+      -Infinity,
+      1.081868469,
+      2.4447378840000002,
+      Infinity
+    ],
+    "woes": [
+      -0.22946699363562373,
+      0.05569658056388893,
+      0.4794162633349677
+    ],
+    "manual_woe": [
+      NaN,
+      NaN,
+      NaN
+    ]
+  },
+  "Numerical_5": {
+    "nan_woe": 0.05048410975407447,
+    "dtype": "float64",
+    "bins": [
+      -Infinity,
+      3.3094303619999996,
+      Infinity
+    ],
+    "woes": [
+      -0.06041864526018037,
+      0.4400828643154995
+    ],
+    "manual_woe": [
+      NaN,
+      NaN
+    ]
+  },
+  "Numerical_6": {
+    "nan_woe": 0,
+    "dtype": "float64",
+    "bins": [
+      -Infinity,
+      1.274346281,
+      Infinity
+    ],
+    "woes": [
+      -0.29834296020699125,
+      0.7879010910995858
+    ],
+    "manual_woe": [
+      NaN,
+      NaN
+    ]
+  },
+  "Numerical_7": {
+    "nan_woe": 0,
+    "dtype": "float64",
+    "bins": [
+      -Infinity,
+      0.77645131,
+      1.4063889715,
+      2.042022801,
+      Infinity
+    ],
+    "woes": [
+      -0.58718204606604,
+      -0.09109495918309929,
+      0.5524042464948817,
+      1.8745726883650344
+    ],
+    "manual_woe": [
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ]
+  },
+  "AGE": {
+    "nan_woe": -0.06231777875452149,
+    "dtype": "float64",
+    "bins": [
+      -Infinity,
+      47.432585694588,
+      Infinity
+    ],
+    "woes": [
+      0.3997453934476094,
+      -0.16889405576413785
+    ],
+    "manual_woe": [
+      NaN,
+      NaN
+    ]
+  },
+  "Categorical_1": {
+    "unknown_woe": 0,
+    "dtype": "category",
+    "woes": [
+      0.349954155033803,
+      -0.12084537145272156,
+      -0.7832475651639974,
+      0.0
+    ],
+    "manual_woe": [
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "cat_bins": [
+      [
+        "EEE",
+        0
+      ],
+      [
+        "FFF",
+        0
+      ],
+      [
+        "GGG",
+        0
+      ],
+      [
+        "III",
+        0
+      ],
+      [
+        "HHH",
+        1
+      ],
+      [
+        "DDD",
+        1
+      ],
+      [
+        "CCC",
+        1
+      ],
+      [
+        "BBB",
+        2
+      ],
+      [
+        "AAA",
+        2
+      ],
+      [
+        NaN,
+        3
+      ]
+    ]
+  }
+}

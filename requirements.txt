@@ -1,0 +1,31 @@
+# When adding required modules check if it should
+# also be added to scoring.__init__ version check
+# don't create duplicates!!
+numpy>=1.16.3
+scipy
+pandas
+scikit-learn
+statsmodels
+matplotlib
+seaborn
+sqlalchemy
+cx_Oracle
+ipywidgets
+packaging
+qgrid>=1.0.3
+tqdm>=4.40
+xgboost
+lightgbm
+shap
+hyperopt
+python-docx
+
+# fefe dependencies
+dash==1.12.0
+dash-core-components>=1.10.0
+dash-html-components>=1.0.3
+pprintpp
+dataclasses
+
+# coll dependencies 
+plotly

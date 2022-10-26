@@ -1,0 +1,66 @@
+title:Scorecard Documentation
+-heading:Introduction
+--version_control
+--basic_information
+--empty_chapter:Initiation Document
+--empty_chapter:Scripts
+-heading:Previous Model
+--empty_chapter:Target
+--empty_chapter:Predictors
+--empty_chapter:Documentation
+-heading:Data Sample
+--empty_chapter:Sample Description
+--heading:Target
+---target_definition
+---empty_chapter:Motivation
+--heading:Sample Analysis
+---empty_chapter:Time Period
+---data_summary
+---sample_statistics
+--heading:Oversampling
+---empty_chapter:Oversampling Reason
+---empty_chapter:Weight Definition
+-heading:Methods
+--library_version
+--empty_chapter:Feature Engineering
+--empty_chapter:Variable Transformation
+--empty_chapter:Feature Selection
+--empty_chapter:Model Estimation
+--empty_chapter:Hyperparameters
+-heading:Scorecard
+--scorecard_table
+--scorecard_histogram
+--calibration_plot
+-heading:Predictors
+@predictors
+--predictor_name
+---empty_chapter:Definition
+---empty_chapter:Business Logic
+---predictor_grouping
+---predictor_stability
+---predictor_stability_short_target
+@
+-covariate_list
+-correlation_matrix
+-heading:Model Evaluation
+--performance_table
+--performance_bootstrap
+--roc_curves
+--lift_curves
+--heading:Monthly Performance
+---gini_lift_intime
+---gini_lift_intime_short
+--marginal_contribution_remove
+-heading:Comparison with Current Model
+--empty_chapter:Predictor Comparison
+--performance_table_oldscore
+--performance_bootstrap_oldscore
+--roc_curves_oldscore
+--lift_curves_oldscore
+--heading:Monthly Performance Comparison
+---gini_lift_intime_oldscore
+---gini_lift_intime_short_target_oldscore
+--transition_matrices
+-scoring_script_sql
+-empty_chapter:Validation
+-empty_chapter:Sign-off Sheet

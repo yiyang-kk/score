@@ -1,0 +1,14 @@
+var1,var2,type,in_nan,in_inf,out_nan,out_inf,bins
+AMOUNT,FEE,sum,,,,,
+AMOUNT,AMOUNT,product,,,,,
+AMOUNT,FEE,difference,,,,,
+FEE,AMOUNT,ratio,,,0,999,
+TRANS_TYPE,TRANS_PLACE,cartesian,,,,,
+TRANS_TYPE,TRANS_PLACE,equality,,,,,
+AMOUNT,FEE,equality,,,,,
+FEE,FEE,equality,,,,,
+AMOUNT,,quantiles,,,,,5
+CITY,,length,,,,,
+CITY,,clean,XNA,,,,
+TRANS_TYPE,AMOUNT,cartesian,,,,,
+AMOUNT,FEE,cartesian,,,,,3

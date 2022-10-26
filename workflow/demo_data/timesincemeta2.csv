@@ -1,0 +1,13 @@
+granularity,type,condition1,from1,from1eq,to1,to1eq,category1,condition2,from2,from2eq,to2,to2eq,category2
+days,last,AMOUNT,1000,0,,,,,,,,,
+days,last,AMOUNT,,,500,1,,,,,,,
+days,last,AMOUNT,800,1,1000,0,,TRANS_TYPE,,,,,CA
+days,last,,,,,,,TRANS_TYPE,,,,,CC
+months,last,,,,,,,TRANS_PLACE,,,,,ATM
+days,last,,,,,,,,,,,,
+days,first,,,,,,,,,,,,
+days,xxx,,,,,,,,,,,,
+days,first,,,,,,,AMOUNT,,,0,1,
+days,last,TRANS_TYPE,,,,,,,,,,,
+days,first,,,,,,,TRANS_TYPE,,,,,
+days,last,FEE,10,1,20,1,,TRANS_TYPE,,,,,

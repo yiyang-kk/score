@@ -1,0 +1,5 @@
+variable,aggregation,from,to,nancategorical,metric,granularity
+CITY,tschange,1,6,0,,days
+CITY,mode,1,3,0,,
+CITY,nunique,1,6,1,,
+TRANS_PLACE,argmax,1,6,0,AMOUNT,
