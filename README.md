@@ -80,6 +80,7 @@ In case of problems, write an [issue here](https://git.homecredit.net/risk/pytho
 * [**Jan Hynek**](mailto:jan.hynek@homecredit.eu) (HCI Research & Development)
 * **Elena Kuchina** (HCI Research & Development)
 * **Dmitry Gorev** (HCRU Scoring & Big Data)
+* **Samuel Liu** (HCCN Scoring & Big Data)
 * **Hynek Hilbert** (HCRU)
 * **Lubor Pacák** (HCI Research & Development)
 * [**Naďa Horká**](mailto:nada.horka@homecredit.eu) (HCI Research & Development)
